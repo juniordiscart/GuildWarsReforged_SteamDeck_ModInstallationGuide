@@ -56,7 +56,7 @@ With the `gMod.dll` and cartography `.tpf` files downloaded, follow the steps be
 * Make sure invisible files and directories are visible (`Ctrl + H`)
 * Navigate to `.local/share/Steam/steamapps/compatdata/29720/pfx/drive_c/Program Files (x86)`
 * You should see the `Guild Wars` directory link in there, which we created earlier. Enter it.
-* Copy the `gMod.dll` and cartography file next to the `Gw.exe`.
+* Copy the `gMod.dll` and cartography file next to the `Gw.exe` executable.
 * Rename the `gMod.dll` to `d3d9.dll`.
 * Right click in an empty space, and create a new text file called `modlist.txt`.
 * Open the `modlist.txt` file and enter a single line: `C:\Program Files (x86)\Guild Wars\{name of your cartography file}.tpf`. Make sure to adjust the line to fit the name of the cartography file you downloaded.
