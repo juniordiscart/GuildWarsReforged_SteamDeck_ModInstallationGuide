@@ -7,7 +7,7 @@ Credits for go to [ChthonVII](https://github.com/ChthonVII) and his contributors
 ## Prerequisites
 
 * You have a Steam Deck with Guild Wars Reforged installed on it.
-* This guide pertains to the Steam-version of Guild Wars Reforged. Getting this to work with the ArenaNet client of Guild Wars by adding it as a non-Steam game will also work, but requires a little more effort due to Steam adding these kind of applications under varying/different paths.
+* This guide pertains to the Steam-version of Guild Wars Reforged. Getting this to work with the ArenaNet client of Guild Wars by adding it as a non-Steam game may also work, but will require a little more effort on your part to find the right paths that Steam creates for non-Steam games.
 * Run Guild Wars Reforged and sign in to your account at least once. This will make running GWToolbox++ for the first time a little easier.
 * All of this is done in Desktop Mode. It's best that you connect a mouse and keyboard due to the nature of the steps involved.
 
