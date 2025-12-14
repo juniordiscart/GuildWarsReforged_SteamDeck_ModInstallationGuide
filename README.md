@@ -106,7 +106,7 @@ Now that everything is in place, we can adjust the launch options for Guild Wars
 
 When you press `Play` in Steam now, it should launch Guild Wars Reforged with your mods active!
 
-If you also installed GWToolbox++, after about ~20 seconds, GWToolbox++ should now be availble for its first-time setup. Switch to the GWToolbox++ process by alt-tabbing out of Guild Wars, and proceed to let it install and hook it into Guild Wars afterwards.
+If you installed GWToolbox++, after about ~20 seconds, GWToolbox++ should now be availble for its first-time setup. Switch to the GWToolbox++ process by alt-tabbing out of Guild Wars, and proceed to let it install and hook it into Guild Wars afterwards.
 
 After the GWToolbox++ installation is complete, close Guild Wars and open the `steamlauncher.bat` script again. In there, replace the line `start GWToolbox.exe` with `start GWToolbox.exe /quiet`. Save and close the file and start Guild Wars again from Steam. GWToolbox++ should now automatically activate ~20 seconds after the Guild Wars process has started.
 
