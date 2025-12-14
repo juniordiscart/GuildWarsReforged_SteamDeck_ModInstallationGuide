@@ -86,7 +86,7 @@ start GWToolbox.exe
 Secondly, we need Steam being able to execute arbitrary commands, which in this case will call on the `steamlauncher.bat` script.
 
 * Open `Dolphin` file manager
-* Navigate to a location you deem appropriate for this script. In my case, I placed the script simply in my home folder, since its a generic script that can be used by other Steam applications if you want to.
+* Navigate to a location you deem appropriate to create the script for arbirtrary command from Steam. In my case, I placed the script simply in my home folder, since its a generic script that can be used by other Steam applications if you want to.
 * In here, create a `steamarbitrarycommand.sh` text file.
 * Open it, and paste the contents found [here](https://github.com/ChthonVII/guildwarslinuxinstallguide/blob/main/extras/steamarbitrarycommand.sh).
 * Save and close the file.
