@@ -83,7 +83,7 @@ start GWToolbox.exe
 ```
 * Save the file. Keep the file open, or in reach, since we will need to revisit this script one more time after launching Guild Wars Reforged for the first time.
 
-The script contents above will first make the script navigate to your Guild Wars directory inside the Proton runtime launched by Steam, and then start the Guild Wars application. Next, it will ping our own system 20 times. Each ping is sent with 1 second intervals, so this functions as our sleep timer before navigating to the GWToolbox directory and starting the GWToolbox process.
+The script contents above will first make the script navigate to your Guild Wars directory inside the Proton runtime launched by Steam, and then start the Guild Wars application. Next, it will ping our own system 20 times. Each ping is sent with a one second interval, so this functions as a sleep timer before navigating to the GWToolbox directory and starting the GWToolbox process.
 
 Secondly, we need Steam being able to execute arbitrary commands, which in this case will call on the `steamlauncher.bat` script.
 
