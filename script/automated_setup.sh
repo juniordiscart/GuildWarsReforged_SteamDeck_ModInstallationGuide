@@ -2,15 +2,15 @@
 
 gwtoolbox_uri="https://github.com/gwdevhub/GWToolboxpp/releases/download/8.3_Release/gwtoolbox.exe"
 gmod_uri="https://api.github.com/repos/gwdevhub/gMod/releases/latest"
-cartography_uri="https://raw.githubusercontent.com/juniordiscart/GuildWarsReforged_SteamDeck_ModInstallationGuide/dev/automated_setup/resources/Cartography%20and%20IGMM.tpf"
+cartography_uri="https://raw.githubusercontent.com/juniordiscart/GuildWarsReforged_SteamDeck_ModInstallationGuide/main/resources/Cartography%20and%20IGMM.tpf"
 steam_arbitrary_command_uri="https://raw.githubusercontent.com/ChthonVII/guildwarslinuxinstallguide/refs/heads/main/extras/steamarbitrarycommand.sh"
 
 steam_install_dir="$HOME/.local/share/Steam/steamapps/common/Guild Wars"
 runtime_dir="$HOME/.local/share/Steam/steamapps/compatdata/29720/pfx/drive_c/Program Files (x86)"
 gwtoolbox_download_path="$HOME/Downloads/GWToolbox.exe"
 gmod_download_path="$HOME/Downloads/gMod.dll"
-steam_arbitrary_command_path="$HOME/steamarbitrarycommand.sh"
 cartography_download_path="$HOME/Downloads/Cartography.tpf"
+steam_arbitrary_command_path="$HOME/steamarbitrarycommand.sh"
 
 install_gwtoolbox(){
     if ! [ -f "${gwtoolbox_download_path}" ]; then
