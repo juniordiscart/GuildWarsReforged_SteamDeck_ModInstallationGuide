@@ -17,11 +17,11 @@ At this point, download the mods you want or need in Guild Wars. In this guide, 
 
 * [GWToolbox++](https://www.gwtoolbox.com/) — **Note**: when downloading this using Firefox on the Steam Deck, Firefox may prevent you from downloading it initially. If this is the case for you, click on the arrow button, and allow it to continue downloading.
 
-![Alt text](GWToolboxDownload.png "Firefox GWToolbox download issue")
+![Alt text](img/GWToolboxDownload.png "Firefox GWToolbox download issue")
 
 * [gMod](https://github.com/gwdevhub/gMod/releases) — simply download the latest `gMod.dll` from GitHub.
 
-![Alt text](gModFileDownload.png "gMod download")
+![Alt text](img/gModFileDownload.png "gMod download")
 
 * [Cartography Made Easy](https://wiki.guildwars.com/wiki/Player-made_Modifications/Cartography_Index) — Recommended here are either the `2017 Edition - Updated, Extended` or `Cartography Made Easy and In-game Mission Maps (IGMM) combined` versions.
 
@@ -100,7 +100,7 @@ Now that everything is in place, we can adjust the launch options for Guild Wars
 * Right click on Guild Wars Reforged in your Steam library and select `Properties`
 * In the `Launch Options` input field enter: `/home/deck/steamarbitrarycommand.sh %command% --run steamlauncher.bat`. If you placed your arbitrary command script in a different location than the home folder, then adjust the line to make it point to the right location.
 
-![Alt text](LaunchOptions.png "Guild Wars Reforged Steam launch options")
+![Alt text](img/LaunchOptions.png "Guild Wars Reforged Steam launch options")
 
 ### Launch Guild Wars Reforged
 
@@ -110,4 +110,4 @@ If you installed GWToolbox++, after about ~20 seconds, GWToolbox++ should now be
 
 After the GWToolbox++ installation is complete, close Guild Wars and open the `steamlauncher.bat` script again. In there, replace the line `start GWToolbox.exe` with `start GWToolbox.exe /quiet`. Save and close the file and start Guild Wars again from Steam. GWToolbox++ should now automatically activate ~20 seconds after the Guild Wars process has started.
 
-![Alt text](GuildWarsReforgedSteamDeck.png "Guild Wars Reforged running with mods")
+![Alt text](img/GuildWarsReforgedSteamDeck.png "Guild Wars Reforged running with mods")
