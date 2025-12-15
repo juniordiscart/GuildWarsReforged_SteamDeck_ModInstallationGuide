@@ -129,6 +129,8 @@ Secondly, we need Steam being able to execute arbitrary commands, which in this 
 * Go to the `Permissions` tab and toggle the `Execute` permission on to allow it to be executed as a program.
 * Close the file properties window.
 
+![Alt text](img/ScriptExecutePermissions.png "Script execution permissions")
+
 At this point, everything is in place and the setup is complete. The only thing left to do is to adjust the [launch options](#guild-wars-reforged-launch-options) for Guild Wars Reforged in Steam.
 
 ## Guild Wars Reforged Launch Options
