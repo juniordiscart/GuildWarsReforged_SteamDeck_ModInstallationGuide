@@ -99,6 +99,6 @@ echo "==="
 
 echo "Credits to Harry (Target SC), God Of Fissures, Ruine Eternelle, Farlo for their work on the Cartography Made Easy maps that are used."
 echo "Credits to ChthonVII and his contributors for their extensive guide on getting Guild Wars to run on Linux."
-echo "Credits to the gwdevhub team for GWToolbox and gMod add-ons."
+echo "Credits to the gwdevhub team for their GWToolbox and gMod add-ons."
 
 exit 0
