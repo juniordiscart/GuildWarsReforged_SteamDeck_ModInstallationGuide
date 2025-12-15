@@ -6,11 +6,11 @@ This guide mainly took inspiration from [this repository](https://github.com/Cht
 
 ## Credits
 
-Credits to Harry (Target SC), God Of Fissures, Ruine Eternelle, Farlo for their work on the Cartography Made Easy maps that are used.
-
 Credits to [ChthonVII](https://github.com/ChthonVII) and his contributors for their extensive guide on getting Guild Wars to run on Linux.
 
 Credits to the [gwdevhub](https://github.com/gwdevhub) team for their GWToolbox and gMod add-ons.
+
+Credits to Harry (Target SC), God Of Fissures, Ruine Eternelle, Farlo for their work on the Cartography Made Easy maps that are used.
 
 ## Prerequisites
 
