@@ -15,6 +15,7 @@ Credits to Harry (Target SC), God Of Fissures, Ruine Eternelle, Farlo for their 
 ## Prerequisites
 
 * You have a Steam Deck with Guild Wars Reforged installed on it.
+* You have started Guild Wars Reforged at least once and logged in.
 * This guide pertains to the Steam-version of Guild Wars Reforged. Getting this to work with the ArenaNet client of Guild Wars by adding it as a non-Steam game may also work. However, it will require a little more effort on your part to find the right paths that Steam creates for non-Steam games.
 * All of this is done in Desktop Mode. It's best that you connect a mouse and keyboard due to the nature of the steps involved.
 
