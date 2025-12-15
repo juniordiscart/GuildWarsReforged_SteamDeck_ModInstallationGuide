@@ -33,7 +33,7 @@ chmod +x gwreforged_modsetup.sh
 rm ./gwreforged_modsetup.sh
 ```
 
-Press return to execute it.
+Hit `Return` to execute it.
 
 After the script has finished, you can safely close the `Konsole` application. Now, jump to the [launch options](#guild-wars-reforged-launch-options) section to adjust the Steam launch options for Guild Wars Reforged.
 
@@ -60,7 +60,7 @@ Download the mods you want or need in Guild Wars. In this guide, we'll use GWToo
 First, we create a link between the actual Guild Wars installation directory and the Proton runtime which will run the Guild Wars instance. These paths will be the same on all Steam installs of Guild Wars Reforged. The `29720` directory is the AppID of Guild Wars Reforged on Steam. If you add Guild Wars as a non-Steam game, then these paths will be different and you will need to look into Steam's directories where exactly it has placed them.
 
 * Open the `Konsole` application.
-* Paste (`Ctrl + Shift + V`) the line below in the terminal, and hit return to execute it:
+* Paste (`Ctrl + Shift + V`) the line below in the terminal, and hit `Return` to execute it:
 
 `ln -s "/home/deck/.local/share/Steam/steamapps/common/Guild Wars"/ "/home/deck/.local/share/Steam/steamapps/compatdata/29720/pfx/drive_c/Program Files (x86)/Guild Wars"`
 
