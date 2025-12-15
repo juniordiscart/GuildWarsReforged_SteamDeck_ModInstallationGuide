@@ -8,8 +8,18 @@ Credits for go to [ChthonVII](https://github.com/ChthonVII) and his contributors
 
 * You have a Steam Deck with Guild Wars Reforged installed on it.
 * This guide pertains to the Steam-version of Guild Wars Reforged. Getting this to work with the ArenaNet client of Guild Wars by adding it as a non-Steam game may also work, but will require a little more effort on your part to find the right paths that Steam creates for non-Steam games.
-* Run Guild Wars Reforged and sign in to your account at least once. This will make running GWToolbox++ for the first time a little easier.
 * All of this is done in Desktop Mode. It's best that you connect a mouse and keyboard due to the nature of the steps involved.
+
+## Automated Setup
+
+```sh
+curl -sL https://raw.githubusercontent.com/juniordiscart/GuildWarsReforged_SteamDeck_ModInstallationGuide/refs/heads/dev/automated_setup/script/automated_setup.sh > gwreforged_modsetup.sh
+chmod +x gwreforged_modsetup.sh
+./gwreforged_modsetup.sh
+rm ./gwreforged_modsetup.sh
+```
+
+## Manual Setup
 
 ## Downloads
 
