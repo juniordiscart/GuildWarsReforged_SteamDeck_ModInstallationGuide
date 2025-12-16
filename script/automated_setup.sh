@@ -72,12 +72,12 @@ endmsg
 }
 
 if ! [ -d "${steam_install_dir}" ]; then
-    echo "Guild Wars Reforged is not installed in Steam."
+    echo "Guild Wars Reforged is not installed in Steam. This script is only supports the Steam-version of Guild Wars Reforged."
     exit 1
 fi  
 
 if ! [ -d "${runtime_dir}" ]; then
-    echo "The Proton runtime folder for Guild Wars Reforged could not be found."
+    echo "The Proton runtime folder for Guild Wars Reforged could not be found. Have you started Guild Wars Reforged at least once?"
     exit 1
 fi 
 
