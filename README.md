@@ -1,6 +1,6 @@
 # Guild Wars Reforged on Steam Deck – Mods Installation Guide
 
-This guide provides a step-by-step guide on how to install mods for Guild Wars Reforged on the Steam Deck. An [Automated Setup](#automated-setup) is available which will do all the heavy lifting for you. If you prefer to do the setup manually or would like to know what is happening in the background, you can jump to the [Manual Setup](#manual-setup) section and follow along there.
+This guide provides a step-by-step guide on how to install mods for Guild Wars Reforged on the Steam Deck (or close derivatives like Bazzite). An [Automated Setup](#automated-setup) is available which will do all the heavy lifting for you. If you prefer to do the setup manually or would like to know what is happening in the background, you can jump to the [Manual Setup](#manual-setup) section and follow along there.
 
 This guide mainly took inspiration from [this repository](https://github.com/ChthonVII/guildwarslinuxinstallguide) in regard to getting to run Guild Wars on Linux. However, since this covers all topics of getting to run Guild Wars on Linux and is very verbose, you can easily get lost in just the steps you need to take to get it to work on the Steam Deck.
 
