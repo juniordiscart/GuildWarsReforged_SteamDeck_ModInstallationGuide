@@ -24,8 +24,15 @@ gmod_uri="https://api.github.com/repos/gwdevhub/gMod/releases/latest"
 cartography_uri="https://raw.githubusercontent.com/juniordiscart/GuildWarsReforged_SteamDeck_ModInstallationGuide/main/resources/Cartography%20and%20IGMM.tpf"
 steam_arbitrary_command_uri="https://raw.githubusercontent.com/ChthonVII/guildwarslinuxinstallguide/refs/heads/main/extras/steamarbitrarycommand.sh"
 
-steam_install_dir="$HOME/.local/share/Steam/steamapps/common/Guild Wars"
-runtime_dir="$HOME/.local/share/Steam/steamapps/compatdata/29720/pfx/drive_c/Program Files (x86)"
+read -r -p "Enter the non-Steam shortcut ID (compatdata ID): " nonsteam_id
+if [ -z "${nonsteam_id}" ]; then
+    echo "Shortcut IDgst cannot be empty."
+    exit 1
+fi
+
+runtime_dir="$HOME/.local/share/Steam/steamapps/compatdata/${nonsteam_id}/pfx/drive_c/Program Files (x86)"
+steam_install_dir="${runtime_dir}/Guild Wars"
+
 gwtoolbox_download_path="$HOME/Downloads/GWToolbox.exe"
 gmod_download_path="$HOME/Downloads/gMod.dll"
 cartography_download_path="$HOME/Downloads/Cartography.tpf"
@@ -73,15 +80,14 @@ install_gmod(){
 create_scripts(){
     echo -n "Creating scripts..."
 
-    cat > "${steam_install_dir}/steamlauncher.bat" <<'endmsg'
+    cat > "${runtime_dir}/Guild Wars/steamlauncher.bat" <<'endmsg'
 echo off
 
 cd /D "C:\Program Files (x86)\Guild Wars"
-start Gw.exe
+start "" Gw.exe
 
 ping -n 15 127.0.0.1 > nul
-cd /D "C:\Program Files (x86)\GWToolbox"
-start GWToolbox.exe
+start "" "C:\Program Files (x86)\Guild Wars\GWToolbox\GWToolbox.exe"
 endmsg
 
     curl -sL "${steam_arbitrary_command_uri}" > "${steam_arbitrary_command_path}"
@@ -91,12 +97,13 @@ endmsg
 }
 
 if ! [ -d "${steam_install_dir}" ]; then
-    echo "Guild Wars Reforged is not installed in Steam. This script is only supports the Steam-version of Guild Wars Reforged."
+    echo "Guild Wars Reforged install directory not found at: ${steam_install_dir}"
     exit 1
 fi
 
 if ! [ -d "${runtime_dir}" ]; then
-    echo "The Proton runtime folder for Guild Wars Reforged could not be found. Have you started Guild Wars Reforged at least once?"
+    echo "The Proton runtime folder for Guild Wars Reforged could not be found at: ${runtime_dir}"
+    echo "Have you started Guild Wars Reforged at least once?"
     exit 1
 fi
 
@@ -113,7 +120,10 @@ echo "GWToolbox and gMod with Cartography Made Easy have been successfully insta
 
 echo "==="
 echo "IMPORTANT! Adjust the launch options for Guild Wars Reforged to the following:"
-echo "${steam_arbitrary_command_path} %command% --run steamlauncher.bat"
+echo "target : /bin/bash"
+echo "start in : /home/deck"
+echo "launch opt :"
+echo "-lc 'export STEAM_COMPAT_CLIENT_INSTALL_PATH=\"/home/deck/.local/share/Steam\"; export STEAM_COMPAT_DATA_PATH=\"/home/deck/.local/share/Steam/steamapps/compatdata/${nonsteam_id}\"; \"/home/deck/.local/share/Steam/steamapps/common/Proton - Experimental/proton\" run \"C:\\Program Files (x86)\\Guild Wars\\steamlauncher.bat\"'"
 echo "==="
 
 echo "Credits to Harry (Target SC), God Of Fissures, Ruine Eternelle, Farlo for their work on the Cartography Made Easy maps that are used."

@@ -23,7 +23,7 @@ Credits to Harry (Target SC), God Of Fissures, Ruine Eternelle, Farlo for their 
 
 This automated setup script will download and install GWToolbox++ and gMod along with a Cartography Made Easy map for Guild Wars Reforged on your Steam Deck. If you want to get a general understanding of what it will do, read the [Manual Setup](#manual-setup) section below.
 
-**Note:** this script is only intended for use on the Steam Deck with the Steam-version of Guild Wars Reforged. It's untested on other platforms. Use at your own risk!
+**Note:** this script is only intended for use on the Steam Deck with the Steam-version of Guild Wars Reforged. It's untested on other platforms. Use at your own risk! If you added Guild Wars as a non-Steam shortcut, use the non-Steam script instead (see below).
 
 Open the `Konsole` application and paste (`Ctrl + Shift + V`) the following lines into it:
 
@@ -34,9 +34,24 @@ chmod +x gwreforged_modsetup.sh
 rm ./gwreforged_modsetup.sh
 ```
 
-Hit `Return` to execute it.
+Hit `Return` to execute it. Use the `-d` flag (e.g. `./gwreforged_modsetup.sh -d`) to print each command before it runs.
 
 After the script has finished, you can safely close the `Konsole` application. Now, jump to the [launch options](#guild-wars-reforged-launch-options) section to adjust the Steam launch options for Guild Wars Reforged.
+
+### Automated Setup (Non-Steam Shortcut)
+
+If you added Guild Wars as a non-Steam shortcut, you can use the dedicated script below. It will ask for the shortcut ID (compatdata ID) and output the exact Steam launch options to use.
+
+Open the `Konsole` application and paste (`Ctrl + Shift + V`) the following lines into it:
+
+```sh
+curl -sL https://raw.githubusercontent.com/juniordiscart/GuildWarsReforged_SteamDeck_ModInstallationGuide/main/script/automated_setup_nonsteam.sh > gwreforged_modsetup_nonsteam.sh
+chmod +x gwreforged_modsetup_nonsteam.sh
+./gwreforged_modsetup_nonsteam.sh
+rm ./gwreforged_modsetup_nonsteam.sh
+```
+
+Hit `Return` to execute it. Use the `-d` flag (e.g. `./gwreforged_modsetup_nonsteam.sh -d`) to print each command before it runs.
 
 ## Manual Setup
 
