@@ -1,5 +1,24 @@
 #!/usr/bin/env bash
 
+debug=false
+while [ "$#" -gt 0 ]; do
+    case "$1" in
+        -d|--debug)
+            debug=true
+            shift
+            ;;
+        *)
+            echo "Unknown argument: $1"
+            echo "Usage: $0 [-d|--debug]"
+            exit 1
+            ;;
+    esac
+done
+
+if [ "${debug}" = true ]; then
+    set -x
+fi
+
 gwtoolbox_uri="https://github.com/gwdevhub/GWToolboxpp/releases/download/8.3_Release/gwtoolbox.exe"
 gmod_uri="https://api.github.com/repos/gwdevhub/gMod/releases/latest"
 cartography_uri="https://raw.githubusercontent.com/juniordiscart/GuildWarsReforged_SteamDeck_ModInstallationGuide/main/resources/Cartography%20and%20IGMM.tpf"
@@ -74,12 +93,12 @@ endmsg
 if ! [ -d "${steam_install_dir}" ]; then
     echo "Guild Wars Reforged is not installed in Steam. This script is only supports the Steam-version of Guild Wars Reforged."
     exit 1
-fi  
+fi
 
 if ! [ -d "${runtime_dir}" ]; then
     echo "The Proton runtime folder for Guild Wars Reforged could not be found. Have you started Guild Wars Reforged at least once?"
     exit 1
-fi 
+fi
 
 if ! [[ -L "${runtime_dir}/Guild Wars" && -d "${runtime_dir}/Guild Wars" ]]; then
     ln -s "${steam_install_dir}" "${runtime_dir}/Guild Wars"
