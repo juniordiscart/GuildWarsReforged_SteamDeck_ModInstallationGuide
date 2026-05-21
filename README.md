@@ -1,6 +1,6 @@
 # Guild Wars Reforged on Steam Deck – Mods Installation Guide
 
-This guide provides a step-by-step guide on how to install mods for Guild Wars Reforged on the Steam Deck. An [Automated Setup](#automated-setup) is available which will do all the heavy lifting for you. If you prefer to do the setup manually or would like to know what is happening in the background, you can jump to the [Manual Setup](#manual-setup) section and follow along there.
+This guide provides a step-by-step guide on how to install mods for Guild Wars Reforged on the Steam Deck (or close derivatives like Bazzite). An [Automated Setup](#automated-setup) is available which will do all the heavy lifting for you. If you prefer to do the setup manually or would like to know what is happening in the background, you can jump to the [Manual Setup](#manual-setup) section and follow along there.
 
 This guide mainly took inspiration from [this repository](https://github.com/ChthonVII/guildwarslinuxinstallguide) in regard to getting to run Guild Wars on Linux. However, since this covers all topics of getting to run Guild Wars on Linux and is very verbose, you can easily get lost in just the steps you need to take to get it to work on the Steam Deck.
 
@@ -63,7 +63,7 @@ First, we create a link between the actual Guild Wars installation directory and
 * Open the `Konsole` application.
 * Paste (`Ctrl + Shift + V`) the line below in the terminal, and hit `Return` to execute it:
 
-`ln -s "/home/deck/.local/share/Steam/steamapps/common/Guild Wars"/ "/home/deck/.local/share/Steam/steamapps/compatdata/29720/pfx/drive_c/Program Files (x86)/Guild Wars"`
+`ln -s "$HOME/.local/share/Steam/steamapps/common/Guild Wars"/ "$HOME/.local/share/Steam/steamapps/compatdata/29720/pfx/drive_c/Program Files (x86)/Guild Wars"`
 
 * Close the `Konsole` application.
 
@@ -138,7 +138,7 @@ At this point, everything is in place and the setup is complete. The only thing 
 Now that everything is in place, we can adjust the launch options for Guild Wars Reforged in Steam.
 
 * Right-click on Guild Wars Reforged in your Steam library and select `Properties`
-* In the `Launch Options` input field enter: `/home/deck/steamarbitrarycommand.sh %command% --run steamlauncher.bat`.
+* In the `Launch Options` input field enter: `$HOME/steamarbitrarycommand.sh %command% --run steamlauncher.bat`.
 
 Using the [Automated Setup](#automated-setup) will have saved the `steamarbitrarycommand.sh` in this location. If you went through the [Manual Setup](#manual-setup) and you placed it at a different location, then you should adjust the path accordingly.
 
