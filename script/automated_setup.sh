@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-gwtoolbox_uri="https://github.com/gwdevhub/GWToolboxpp/releases/download/8.26_Release/GWToolbox.exe"
+gwtoolbox_uri="https://github.com/gwdevhub/GWToolboxpp/releases/download/8.28_Release/GWToolbox.exe"
 gmod_uri="https://api.github.com/repos/gwdevhub/gMod/releases/latest"
 cartography_uri="https://raw.githubusercontent.com/juniordiscart/GuildWarsReforged_SteamDeck_ModInstallationGuide/main/resources/Cartography%20and%20IGMM.tpf"
 steam_arbitrary_command_uri="https://raw.githubusercontent.com/ChthonVII/guildwarslinuxinstallguide/refs/heads/main/extras/steamarbitrarycommand.sh"
